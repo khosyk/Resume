@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src='index.js'></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script defer src='form.js'></script>
+  <title>HEEUN</title>
+</head>
+<body>
+  <header>
+    <ul>
+      <li class='on'>HOME</li>
+      <li>ABOUT</li>
+      <li>PORTFOLIO</li>
+      <li>CONTACT</li>
+    </ul>
+  </header>
+  <main class='face1'>
+    <section id='home' class='on'>
+      <div>
+        <span>Hello</span>
+        <h1>I'm HEEUN LEE</h1>
+        <h2>FRONT-END DEVELOPER</h2>
+        <h3>Hire me!</h3>
+      </div>  
+      </section>
+    <section id='about'>
+      <h2>ABOUT ME</h2>
+    </section>
+    <section id='portfolio'>
+      <h2>PORTFOLIO</h2>
+    </section>
+    <section id='contact'>
+      <h2>CONTACT ME</h2>
+      <form id='contact_form'>
+        <input type='hidden' name='contact_number'>
+        <input type='text' required placeholder="이름을 입력해주세요" name="to_name">
+        <input type='text' required placeholder="연락처를 입력해주세요" name='contact'>
+        <input type='text' required placeholder="이메일을 입력해주세요" name='from_mail'>
+        <textarea required placeholder="메세지를 입력해주세요" name='message' cols='30' rows='5'></textarea>
+        <input type='submit' value='보내기'>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
