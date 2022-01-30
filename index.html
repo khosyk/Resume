@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,10 @@
   <script defer src='index.js'></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script defer src='form.js'></script>
+  <script src="https://kit.fontawesome.com/825fe39d73.js" crossorigin="anonymous"></script>
   <title>HEEUN</title>
 </head>
+
 <body>
   <header>
     <ul>
@@ -19,19 +22,74 @@
       <li>CONTACT</li>
     </ul>
   </header>
-  <main class='face1'>
-    <section id='home' class='on'>
-      <div>
+  <main class='face3'>
+
+    <section id='home'>
+      <div class='text'>
         <span>Hello</span>
         <h1>I'm HEEUN LEE</h1>
         <h2>FRONT-END DEVELOPER</h2>
-        <h3>Hire me!</h3>
-      </div>  
-      </section>
-    <section id='about'>
-      <h2>ABOUT ME</h2>
+        <button>Hire me!</button>
+      </div>
+      <div class='imgWrap'>
+        <img class='profile' src="./img/2.png" alt="profile photo">
+        <img class='shape1' src="./img/sh1.png" alt="background shape">
+        <img class='round1' src="./img/ro1.png" alt="background shape">
+        <img class='round2' src="./img/ro2.png" alt="background shape">
+      </div>
     </section>
-    <section id='portfolio'>
+
+    <section id='about'>
+      <div class='wrap'>
+        <div class='aboutLeft'>
+          <h2>ABOUT ME
+            <div class='circle'></div>
+          </h2>
+        </div>
+
+        <div class='aboutRight'>
+          <p class='aboutRightTop'>
+            팀 내 중재자 역할을 맡는 올라운더가 목표인 프론트엔드 지망생입니다.<br>
+            이전에 영업팀과 디자인팀이 견해차이가 많아 자주 중재한 경험이 많아, 중간에서 의견을 잘 조율할 수 있습니다.<br>지금은 프론트엔드의 역할만 할 수 있지만 앞으로 계획중인 Next.js,
+            Nodejs, GraphQL 등을 공부하여 풀스택 올라운더가 되는 것이 목표입니다.
+          </p>
+          <div class='aboutRightBottom'>
+            <strong>
+              사용가능
+            </strong>
+            <ul>
+              <li>
+                <span>SCSS</span>
+                <div><i class="fab fa-sass"></i> </div>
+              </li>
+              <li>
+                <span class='styled'>STYLED<br>COMPONENTS</span> 
+                <div><img class='styledComponents'
+                  src="./img/styled-components.png" alt="styled-components"></div>
+              </li>
+              <li>
+                <span>JAVASCRIPT</span>
+                <div><i class="fab fa-js-square"></i></div>
+              </li>
+              <li>
+                <span>REACT</span>
+                <div><i class="fab fa-react"></i></div>
+              </li>
+              <li>
+                <span>REDUX</span>
+                <div><img class='redux' src="./img/redux.png" alt="redux"></div>
+              </li>
+              <li>
+                <span>AXIOS</span>
+                <div><i class='fab fas fa-exchange-alt'></i></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id='portfolio' class='on'>
       <h2>PORTFOLIO</h2>
     </section>
     <section id='contact'>
@@ -47,4 +105,5 @@
     </section>
   </main>
 </body>
+
 </html>
