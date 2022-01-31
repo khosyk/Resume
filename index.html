@@ -22,9 +22,9 @@
       <li>CONTACT</li>
     </ul>
   </header>
-  <main class='face3'>
+  <main class='face1'>
 
-    <section id='home'>
+    <section id='home'  class='on'>
       <div class='text'>
         <span>Hello</span>
         <h1>I'm HEEUN LEE</h1>
@@ -39,7 +39,7 @@
       </div>
     </section>
 
-    <section id='about'>
+    <section id='about' >
       <div class='wrap'>
         <div class='aboutLeft'>
           <h2>ABOUT ME
@@ -49,13 +49,13 @@
 
         <div class='aboutRight'>
           <p class='aboutRightTop'>
-            팀 내 중재자 역할을 맡는 올라운더가 목표인 프론트엔드 지망생입니다.<br>
+            팀을 연결시켜주는 다리 역할을 맡는 올라운더가 목표인 프론트엔드 지망생입니다.<br>
             이전에 영업팀과 디자인팀이 견해차이가 많아 자주 중재한 경험이 많아, 중간에서 의견을 잘 조율할 수 있습니다.<br>지금은 프론트엔드의 역할만 할 수 있지만 앞으로 계획중인 Next.js,
             Nodejs, GraphQL 등을 공부하여 풀스택 올라운더가 되는 것이 목표입니다.
           </p>
           <div class='aboutRightBottom'>
             <strong>
-              사용가능
+              STACK
             </strong>
             <ul>
               <li>
@@ -63,9 +63,8 @@
                 <div><i class="fab fa-sass"></i> </div>
               </li>
               <li>
-                <span class='styled'>STYLED<br>COMPONENTS</span> 
-                <div><img class='styledComponents'
-                  src="./img/styled-components.png" alt="styled-components"></div>
+                <span class='styled'>STYLED<br>COMPONENTS</span>
+                <div><img class='styledComponents' src="./img/styled-components.png" alt="styled-components"></div>
               </li>
               <li>
                 <span>JAVASCRIPT</span>
@@ -89,21 +88,112 @@
 
       </div>
     </section>
-    <section id='portfolio' class='on'>
-      <h2>PORTFOLIO</h2>
-    </section>
-    <section id='contact'>
-      <h2>CONTACT ME</h2>
-      <form id='contact_form'>
-        <input type='hidden' name='contact_number'>
-        <input type='text' required placeholder="이름을 입력해주세요" name="to_name">
-        <input type='text' required placeholder="연락처를 입력해주세요" name='contact'>
-        <input type='text' required placeholder="이메일을 입력해주세요" name='from_mail'>
-        <textarea required placeholder="메세지를 입력해주세요" name='message' cols='30' rows='5'></textarea>
-        <input type='submit' value='보내기'>
-      </form>
-    </section>
-  </main>
-</body>
 
-</html>
+    <section id='portfolio' >
+      <div class='wrap'>
+        <h2>PORTFOLIO</h2>
+        <ul class='inner'>
+            <li class='article'>
+          <a href='https://khosyk.github.io/business/' target='_blank'>
+              <div class="imgWrap">
+              <img src="./img/p1.JPG" alt="project image1">
+            </div>
+            <div class='listBottom'>
+              <h3>비즈니스 웹페이지</h3>
+              <ol>
+                <li><span>■ REACT</span></li>
+                <li><span>■ SCSS</span></li>
+                <li><span>■ 반응형 디자인</span></li>
+                <li>
+                  <p>
+                    Youtube, KakaoMap, Flikr, Slider 등의 다양한 api를 이용해 만든
+                    비즈니스 페이지 입니다.
+                    가장 최신버전의 react-router를 사용하였으며, location을 파악하여 사용자가 어느 페이지에 머물고 있는지 알 수 있으며, function 컴포넌트로 
+                    제작 되었습니다.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </a>
+          </li>
+          <li class='article'>
+            <a href='http://15.165.116.104/' target='_blank'>
+            <div class="imgWrap">
+              <img src="./img/p2.JPG" alt="project image2">
+            </div>
+            <div class='listBottom'>
+              <h3>CRUD 웹 페이지</h3>
+              <ol>
+                <li><span>■ REACT</span></li>
+                <li><span>■ Styled-components</span></li>
+                <li><span>■ 반응형 디자인</span></li>
+                <li>
+                  <p>
+                    메인페이지와 ISSUME 게시판을 Redux를 통해 연결하여 issue에 등록된 포스트를 메인페이지에서 확인 할 수있습니다. 로그인, 회원가입, 쿠키생성, 토큰을 통한 로그인상태를 확인 가능합니다. function, class 컴포넌트 혼합하여 제작 되었습니다.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </a>
+          </li>
+
+          <li class='article'>
+            <a href='https://khosyk.github.io/heeflex/#/' target='_blank'>
+            <div class="imgWrap">
+              <img src="./img/p3.JPG" alt="project image3">
+            </div>
+            <div class='listBottom'>
+              <h3>영화정보 웹페이지</h3>
+              <ol>
+                <li><span>■ REACT</span></li>
+                <li><span>■ Styled-components</span></li>
+                <li><span>■ 반응형 디자인</span></li>
+                <li>
+                  <p>
+                    GRID를 사용하여 디자인된 영화 소개 페이지입니다. 다른 소개페이지와 다르게 imdb, rotten tomato 의 api를 함께 불러오고, 영화의 추가정보를 탭하면 로드할 수 있는 방식을 추가했습니다. 그외에 로고와 디자인을 변경하여 차별점을 주었습니다.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </li>
+        </a>
+        </ul>
+        <div class='innerBottom'>
+          <a href='https://github.com/khosyk' target='_blank'>
+            <h4>more on <i class='fab fab fa-github'></i><i class='fab fas fas fa-chevron-right'></i></h4>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id='contact' >
+      <div class='inner'>
+        <div class="left">
+          <h2>CONTACT<br>――― ME</h2>
+          <img src="./img/sh1.png" alt="background shape">
+          <div class='leftBottom'>
+            <a href='https://blog.naver.com/khosyk' target='_blank'>
+              < Visit blog
+            </a>
+            <a href='https://www.youtube.com/channel/UC9hoFX4WeI7VKo0gXWdS_Hw/featured' target='_blank'>
+              Visit Youtube >
+            </a>
+          </div>
+      </div>
+        <div class="right">
+        <form id='contact_form'>
+          <input type='hidden' name='contact_number'>
+          <input type='text' required placeholder="이름을 입력해주세요" name="to_name">
+          <input type='text' required placeholder="연락처를 입력해주세요" name='contact'>
+          <input type='text' required placeholder="이메일을 입력해주세요" name='from_mail'>
+          <textarea required placeholder="메세지를 입력해주세요" name='message' cols='30' rows='5'></textarea>
+          <input class='submit' type='submit' value='메세지 보내기'>
+        </form>
+        </div>
+      </div>
+      </section>
+    </main>
+  </body>
+  
+  </html>
