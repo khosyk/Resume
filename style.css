@@ -59,7 +59,7 @@ header ul li:first-child{
   padding-left:1vw;
 }
 
-@media only screen and (max-width:720px) {
+@media screen and (max-width:720px) {
   header ul li{
     font-size:13px;
   }
@@ -214,20 +214,6 @@ main section:nth-of-type(4){
   }
 }
 
-@media only screen and (max-width:1279px) {
-  #home .text {
-    padding-left: 1vw;
-  }
-  #home h1{
-    font-size: 28px;
-    text-shadow: 1px 1px 1px #000;
-  }
-  #home h2{
-    font-size:16px;
-  }
-}
-
-
 #home .imgWrap{
   width:30vw;
   position: relative;
@@ -240,7 +226,7 @@ main section:nth-of-type(4){
   position: absolute;
   width:100%;
   max-width: 800px;
-  min-width: 500px;
+  min-width: 420px;
   transition: all .3s ease-in-out;
   z-index: -1;
 }
@@ -281,11 +267,22 @@ main section:nth-of-type(4){
 
 
 
-@media only screen and (max-width:1279px) {
-
+@media screen and (max-width:1279px) {
+  
+  #home .text {
+    padding-left: 1vw;
+  }
+  #home h1{
+    font-size: 28px;
+    text-shadow: 1px 1px 1px #000;
+  }
+  #home h2{
+    font-size:16px;
+  }
 
   #home .imgWrap img{
-    left:-150px;
+    left:-100px;
+    opacity:0.7;
   }
   
   #home .imgWrap .round1{
@@ -298,17 +295,27 @@ main section:nth-of-type(4){
   }
 }
 
+@media screen and (max-width:1000px){
+  #home .text{
+    position: absolute;
+    top:200px;
+  }
+}
 
-@media only screen and (max-width:500px) {
+@media screen and (max-width:500px) {
+
+  #home .text{
+    width:70%;
+  }
 
   #home .imgWrap .profile{
     min-width:200px;
     width: 250px;
     left:-80px;
-    opacity: 0.5;
-
+    opacity: 0;
   }
 }
+
 
 
 /* about */
