@@ -1,4 +1,5 @@
-
+const inputValue = document.querySelectorAll('input');
+const textareaValue = document.querySelector('textarea');
   // https://dashboard.emailjs.com/admin/integration
 emailjs.init('user_X3WvHBNDXbyaJrxoVv13k');
 window.onload = function() {
@@ -9,9 +10,14 @@ window.onload = function() {
       // these IDs from the previous steps
       emailjs.sendForm('service_dztr32w', 'template_7f0psal', this)
           .then(function() {
-              alert('메세지가 보내졌습니다.');
+            swal("감사합니다!", "메일이 성공적으로 보내졌습니다.", "success");
+            textareaValue.value = '';
+            inputValue.forEach(el => {
+              el.value = '';
+            });
           }, function(error) {
-            alert('메세지 보내기에 실패했습니다. 다시 시도해주세요.', error);
+            swal("이런!", "에러가 발생했습니다.", "error");
+            console.log(error);
           });
   });
 }
