@@ -815,15 +815,25 @@ transform: translateX(-5px);
     min-width: 300px;
     }
 
+  #portfolio .wrap .inner .article .imgWrap img{
+    width:550px;
+  }
   
   #portfolio .wrap .inner .article .listBottom{
     top:85%;
     width:inherit;
   }
-
-  #portfolio .wrap .inner .article .imgWrap img{
-    width:550px;
+  
+  #portfolio .wrap .inner .article .listBottom ol{
+    font-size: 12px;
+    padding: 0px 10px 5px;
   }
+
+  #portfolio .wrap .inner .article .listBottom p{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
 }
 
 @media screen and (max-width:499px) {
