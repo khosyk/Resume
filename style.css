@@ -521,8 +521,9 @@ color:pink;
   color:purple;
 }
 
-@media screen and (max-width:1279px) {
 
+
+@media screen and (max-width:1279px) and (min-height:898px) {
   #about .wrap{
     width:100%;
     justify-content: center;
@@ -588,6 +589,57 @@ color:pink;
   }
 }
 
+
+
+@media screen and (max-height:897px){
+  
+  #about .wrap .aboutLeft h2{
+    color: rgba(255,255,255,0.2);
+    opacity: 0.3;
+    z-index:-2;
+    font-size: 5vw;
+    margin-bottom: 50px;
+  }
+
+  #about .wrap .aboutLeft h2::after{
+    opacity: 0.1;
+    bottom: -8vw;
+  }
+  
+  #about .wrap .aboutLeft h2 .circle{
+    width:15vw;
+    height:15vw;
+    left:10%;
+  }
+
+  #about .wrap .aboutRight{
+    width:100%;
+    min-width: 300px;
+  }
+  
+  #about .wrap .aboutRight .aboutRightTop{
+    font-size: 14px;
+  }
+  
+  #about .wrap .aboutRight .aboutRightBottom strong{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  #about .wrap .aboutRight .aboutRightBottom ul li{
+    padding:2px 3px;
+  }
+
+  #about .wrap .aboutRight .aboutRightBottom ul li span{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+    color:#ddd;
+  }
+
+}
+
+
 @media screen and (max-width:499px) {
 
   #about .wrap .aboutLeft h2{
@@ -618,8 +670,17 @@ color:pink;
     font-size: 8px;
   }
 
+  
+  #about .wrap .aboutRight .aboutRightBottom ul li img{
+    width:30px;
+    height:30px;
+  }
 
+  #about .wrap .aboutRight .aboutRightBottom ul li i{
+    font-size: 30px;
+  }
 }
+
 
 
 /* Portfolio */
@@ -810,7 +871,7 @@ transform: translateX(-5px);
   
   #portfolio .wrap .inner .article {
     width:50%;
-    height: 180px;
+    height: 18vh;
     margin-bottom:10px;
     min-width: 300px;
     }
@@ -820,8 +881,14 @@ transform: translateX(-5px);
   }
   
   #portfolio .wrap .inner .article .listBottom{
-    top:85%;
+    top:87%;
     width:inherit;
+  }
+
+  #portfolio .wrap .inner .article .listBottom h3{
+   font-size: 16px;
+   line-height: 1.2;
+   padding:0px 0px 10px 0px;
   }
   
   #portfolio .wrap .inner .article .listBottom ol{
@@ -833,6 +900,15 @@ transform: translateX(-5px);
     font-size: 12px;
     margin-top: 5px;
   }
+
+}
+
+
+@media screen and (max-width:877px) {
+
+  #portfolio .wrap .inner .article .listBottom h3{
+  font-size:14px;
+}
 
 }
 
