@@ -24,9 +24,9 @@ const handleList = (e, index) =>{
 const handleClick = () =>{
   removeClass();
 // thene add class to give 3d effect
-  main.classList.add('face4');
-  list[3].classList.add('on');
-  section[3].classList.add('on');
+  main.classList.add('face2');
+  list[1].classList.add('on');
+  section[1].classList.add('on');
 }
 
 list.forEach((e, index) => {
