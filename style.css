@@ -987,8 +987,9 @@ transform: translateX(-5px);
 #contact .inner .left h2{  
   position: absolute;
   font-size: 50px;
-  color:#ddd;
-  top:35%;
+  color:#fff;
+  text-shadow: 0px 1px 1px #888;
+  top:25%;
   transition: all .3s ease-in-out;
   z-index: 2;
 }
@@ -997,7 +998,7 @@ transform: translateX(-5px);
   position: relative;
   width:80%;
   min-width: 250px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #contact .inner .left .leftBottom{
@@ -1042,9 +1043,9 @@ transform: translateX(-5px);
   border:none;
   color:#fff; 
   font-size: 18px;
-  padding:10px 1px;
+  padding:1vh 1px;
   border-bottom: 3px solid #6E7D86;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 
 #contact .inner .right form input:focus{
@@ -1063,7 +1064,7 @@ transform: translateX(-5px);
   color:#fff;
   border-bottom: 3px solid #6E7D86;
   font-size: 18px;
-  padding:10px 3px;
+  padding:1vh 3px;
   margin-bottom: 20px;  
   resize: none;
 }
@@ -1084,7 +1085,7 @@ transform: translateX(-5px);
   font-size: 22px;
   font-weight: bolder;
   border-radius: 2px;
-  padding:15px 2px;
+  padding:1vh 0px;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }

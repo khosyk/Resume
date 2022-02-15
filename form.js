@@ -15,6 +15,8 @@ window.onload = function() {
             inputValue.forEach(el => {
               el.value = '';
             });
+            inputValue[4].value='메세지 보내기';
+            
           }, function(error) {
             swal("이런!", "에러가 발생했습니다.", "error");
             console.log(error);
